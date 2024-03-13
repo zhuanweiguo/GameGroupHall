@@ -1,0 +1,7 @@
+{
+  "name": "game_rank",
+  "dependencies": {},
+  "extensions": {
+    "uni-cloud-jql": {}
+  }
+}

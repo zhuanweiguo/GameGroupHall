@@ -1,0 +1,49 @@
+{
+	"bsonType": "object",
+	"required": ["code", "name"],
+	"permission": {
+		"read": true,
+		"create": true,
+		"update": true,
+		"delete": true
+	},
+	"properties": {
+		"_id": {
+			"description": "ID，系统自动生成"
+		},
+		"code": {
+			"bsonType": "string",
+			"description": "编码"
+		},
+		"parent_code": {
+			"bsonType": "string",
+			"description": "父级编码",
+			"parentKey": "code"
+		},
+		"name": {
+			"bsonType": "string",
+			"description": "游戏名称",
+			"title": "游戏名称"
+		},
+		"type": {
+			"bsonType": "int",
+			"description": "类型；0游戏，1模式"
+		},
+		"pictures": {
+			"bsonType": "file",
+			"description": "图片",
+			"title": "图片"
+		},
+		"game_disable": {
+			"bsonType": "bool",
+			"description": "是否显示",
+			"title": "是否显示"
+		},
+		"count": {
+			"bsonType": "int",
+			"description": "文章数",
+			"title": "文章数"
+		}
+	},
+	"version": "0.0.1"
+}
